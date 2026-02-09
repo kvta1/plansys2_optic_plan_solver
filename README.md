@@ -2,7 +2,11 @@
 Plan solver for [ROS2 Planning System](https://github.com/IntelligentRoboticsLabs/ros2_planning_system) that uses [OPTIC](https://nms.kcl.ac.uk/planning/software/optic.html) for solving PDDL plans.
 
 ## Dependencies
-Download and compile OPTIC, for more information visit [OPTIC Homepage](https://nms.kcl.ac.uk/planning/software/optic.html).
+Clone and build the OPTIC solver from the [KCL repository](https://github.com/KavrakiLab/optic/tree/master#).
+After building, copy the executable to `.local/bin` by 
+```
+cp ./build/src/optic/optic-clp $HOME/.local/bin
+``` 
 
 To execute [OPTIC](https://nms.kcl.ac.uk/planning/software/optic.html) from any path you must create the following symbolic link where "optic_path" is the path where your executable is located.
 ~~~
